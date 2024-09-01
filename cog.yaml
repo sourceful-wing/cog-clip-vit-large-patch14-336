@@ -12,9 +12,9 @@ build:
   run:
     - pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
     - curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get install -y git-lfs
-    - git clone https://huggingface.co/openai/clip-vit-large-patch14 /weights
+    - git clone https://huggingface.co/openai/clip-vit-large-patch14-336 /weights
     - cd weights && git lfs pull
 
 predict: "predict.py:Predictor"
 
-image: "r8.im/andreasjansson/clip-features"
+image: "r8.im/sourceful-wing/clip-vit-large-patch14-336"

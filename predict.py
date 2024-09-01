@@ -5,7 +5,7 @@ from io import BytesIO
 from typing import List
 from PIL import Image
 from transformers import CLIPProcessor, CLIPModel
-from cog import BasePredictor, Path, Input, BaseModel
+from cog import BasePredictor, Input, BaseModel
 
 
 class NamedEmbedding(BaseModel):
@@ -71,7 +71,7 @@ class Predictor(BasePredictor):
             )
             image_outputs = dict(zip(image_urls, image_embeds))
         else:
-            iamge_outputs = {}
+            image_outputs = {}
 
         outputs = []
         for line in lines:

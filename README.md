@@ -1,6 +1,6 @@
-# cog-clip
+# cog-clip-vit-large-patch14-336
 
-[![Replicate](https://replicate.com/andreasjansson/clip-features)](https://replicate.com/andreasjansson/clip-features)
+[![Replicate](https://replicate.com/sourceful-wing/clip-vit-large-patch14-336)](https://replicate.com/sourceful-wing/clip-vit-large-patch14-336)
 
 Cog model that outputs CLIP features for text and images.
 
@@ -22,7 +22,7 @@ https://replicate.com/api/models/cjwbw/clip-vit-large-patch14/files/36b04aec-efe
 """
 
 # run prediction
-model = replicate.models.get("andreasjansson/clip-features")
+model = replicate.models.get("sourceful-wing/clip-vit-large-patch14-336")
 outputs = model.predict(inputs=inputs)
 
 # output similarity of the three text lines with the image on line 4
